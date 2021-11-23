@@ -1,0 +1,38 @@
+Task 1
+    Task 1.1:
+        Scriu un z pe prima cifra din sir pentru a stii cand sa ma opresc
+        (start - Verific mai intai daca pe banda se afla un numar, scriu z si apelez init), retin
+        aceasta cifra in parametrul f dupa care trec mereu prin sir,
+        iau ultimul caracter, scriu X in pozitia acestuia, dupa care il asez in locul celui 
+        mai din stanga #. Bucla programului are loc in felul urmator: start apeleaza loop ->
+        se apeleaza "goEnd" si "foundLast" care duc acul la sfartsitul sirului -> in functie de ultimul
+        caracter se apeleaza "rewind(found(c))" care atunci cand se revine in pozitia cea mai din
+        stanga se printeaza caractul transmis ca parametru -> se apeleaza din nou loop. 
+        Executia se opreste in momentul in care caracterul z se afla langa un X
+    
+    Task 1.2
+        Reprezentarea in binar a numarul 5 este 101. Pornesc din stanga benzii
+        si verific primii 3 biti, in functie de cum sunt setati acestia sau daca
+        am mai mult de 3 biti in numar scriu pe banda ranspunsul si sterg tot
+        ce nu imi trebuie folosind subrutina "stergeBanda"
+    
+    Task 1.3
+        Se duce acul de citire la final dupa care se trateaza fiecare caz de carry bit separat.
+        Daca avem ambii biti de pe pozitiile 0 si 1 setati, atunci trebuie sa facem 2 carry-uri de biti
+        in caz contrar, avem un singur bit setat pe care il tratam cu subrutina carry_simplu, sau niciunul,
+        caz in care doar setam cei 2 biti. 
+
+    Task 1.4
+        
+
+Task 2
+    Task 2.1:
+        Aceeasi logica ca la taskul 1.1 insa in sens invers si cu un pas initial in plus ->
+        se duce acul pe ultimul caracter, se scrie caracterul z si dupa se intra in bucla de
+        executie principala
+
+    Task 2.2:
+        Se aplica aproximativ aceleasi principii ca la task 1.3, in care verificam ultimii doi
+        biti si aplicam un efect de carry_bit acolo unde este cazul. In plus fata de 1.3 dupa ce
+        se realizeaza scaderea se mai trece odata prin sir de la inceputul acestuia pentru a sterge
+        zerourile in plus.
